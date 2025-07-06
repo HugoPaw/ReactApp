@@ -9,3 +9,80 @@ th, td {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html, #root {
+    height: 100%;
+    background: linear-gradient(to bottom right, #e0f0ff, #b3daff);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 76, 153, 0.2);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    border-top: 6px solid #0077cc;
+}
+
+.title {
+    margin-bottom: 25px;
+    color: #004080;
+    font-size: 28px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    padding: 12px;
+    border: 1px solid #cce0ff;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+    .input:focus {
+        border-color: #0077cc;
+        outline: none;
+    }
+
+.btn {
+    background: #0077cc;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .btn:hover {
+        background: #005fa3;
+    }
+
+.switch {
+    margin-top: 20px;
+    color: #0077cc;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
